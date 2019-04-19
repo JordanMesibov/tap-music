@@ -1,67 +1,91 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Gentium Basic', serif;
-    color: rgb(119, 36, 129);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gentium Basic", serif;
+  color: rgb(119, 36, 129);
 }
 
 body {
-    font-family: 'Gentium Basic', serif;
-    color: rgb(119, 36, 129);
+  font-family: "Gentium Basic", serif;
+  color: rgb(119, 36, 129);
 }
 
 .app {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(216, 205, 205);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: rgb(216, 205, 205); */
 }
 
 header h1 {
-    margin: 50px 0 30px 0;
-    text-align: center;
-    font-size: 40px;
+  margin: 50px 0 30px 0;
+  text-align: center;
+  font-size: 40px;
 }
 
 header p {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .pads {
-    background: rgb(130, 111, 134);
-    width: 100%;
-    display: flex;
+  background: rgb(130, 111, 134);
+  width: 100%;
+  display: flex;
 }
 
 .pads > div {
-    height: 100px;
-    width: 100px;
-    flex: 1;
+  height: 100px;
+  width: 100px;
+  flex: 1;
 }
 
 .pad1 {
-    background: #EF476F;
+  background: #ef476f;
 }
 
 .pad2 {
-    background: #FFD166;
+  background: #ffd166;
 }
 
 .pad3 {
-    background: #06D6A0;
+  background: #06d6a0;
 }
 
 .pad4 {
-    background: #118AB2;
+  background: #118ab2;
 }
 
 .pad5 {
-    background: #073B4C;
+  background: #073b4c;
 }
 
 .pad6 {
-    background: #DD7373;
+  background: #dd7373;
+}
+
+.visual > div {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  bottom: 0%;
+  z-index: -1;
+}
+
+@keyframes jump {
+  0% {
+    bottom: 0%;
+    left: 20%;
+  }
+  50% {
+    bottom: 50%;
+    left: 50%;
+  }
+  100% {
+    bottom: 0%;
+    left: 80%;
+  }
 }
